@@ -51,7 +51,7 @@ export default function App() {
                   path="/profile"
                   element={<Profile session={session} />}
                 />
-                <Route path="*" element={<Navigate to="/home" replace />} />
+                <Route path="/chat/:friend" element={<Chat />} />
               </Route>
             ) : (
               // ----- НЕ ЗАЛОГИНЕН -----
